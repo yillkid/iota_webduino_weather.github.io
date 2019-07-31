@@ -1,4 +1,4 @@
-# Temperature and Humidity stored on the IOTA Tangle with a Webduino Smart
+# Stored weather data on IOTA Tangle with Webduino Smart
 
 ## Introduction
 This code works best with the [Webduino Smart](https://store.webduino.io/products/webduino-smart) and an [temperature and humidity sensor](https://tutorials.webduino.io/zh-tw/docs/basic/sensor/dht.html) to build a simple blockchain IoT environmental sensor demonstration.
