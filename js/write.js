@@ -15,7 +15,7 @@ function write_to_blockchain(datetime, temperature, humidity) {
     }
   };
   
-  var data = JSON.stringify({"value": 0, "message": value, "tag": "WEBDURINOTESTAD", "address": "QOWEREDBYTANGLEACCELERATOR9999999999999999999999999999999999999999999999999999999"});
+  var data = JSON.stringify({"value": 0, "message": value, "tag": "WEBDURINOTESTAE", "address": "QOWEREDBYTANGLEACCELERATOR9999999999999999999999999999999999999999999999999999999"});
   console.log("Writing data to blockchain...");
   xhr.send(data);
   console.log("Written done.");
