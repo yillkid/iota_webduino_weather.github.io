@@ -31,9 +31,14 @@ boardReady({board: 'Smart', device: '10Qpbgjy', transport: 'mqtt'}, function (bo
   rgbled = getRGBLedCathode(board, 15, 12, 13);
   dht = getDht(board, 5);
   rgbled.setColor('#33ff33');
+  // dht.read(function(evt){
+  //  var datetime = get_time("hms");
+  //  document.getElementById('demo-area-01-show').innerHTML = (['<br>Time:',datetime,'<br>T(Celsius):',dht.temperature,'<br>H(%):',dht.humidity].join(''));
+  //  write_to_blockchain(datetime, dht.temperature, dht.humidity);
+  // }, 600000);
   dht.read(function(evt){
     var datetime = get_time("hms");
     document.getElementById('demo-area-01-show').innerHTML = (['<br>Time:',datetime,'<br>T(Celsius):',dht.temperature,'<br>H(%):',dht.humidity].join(''));
     write_to_blockchain(datetime, dht.temperature, dht.humidity);
-  }, 1);
+  });
 });
