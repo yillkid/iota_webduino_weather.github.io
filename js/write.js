@@ -4,7 +4,7 @@ var dht;
 function write_to_blockchain(datetime, temperature, humidity) {
   var value = datetime+","+temperature+","+humidity;
   var xhr = new XMLHttpRequest();
-  var url = "http://node.deviceproof.org:5566/transaction/";
+  var url = "https://demokits.biilabs.io:5567/transaction/";
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange = function () {
