@@ -1,4 +1,4 @@
-var ta_url = "http://node.deviceproof.org:5566"
+var ta_url = "https://demokits.biilabs.io:5567"
 var txn_tag = "WEBDURINOTESTAD"
 var list_hash = [];
 var list_temp = [];
